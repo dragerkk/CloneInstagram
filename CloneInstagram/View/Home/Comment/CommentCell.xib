@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="215" id="KGk-i7-Jjw" customClass="CommentCell" customModule="CloneInstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZk-MB-Dzu">
+                        <rect key="frame" x="10" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="11D-PQ-GQq"/>
+                            <constraint firstAttribute="height" constant="40" id="FbM-bf-0r3"/>
+                            <constraint firstAttribute="width" secondItem="LZk-MB-Dzu" secondAttribute="height" multiplier="1:1" id="PGq-mN-9OG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-0y-WYl">
+                        <rect key="frame" x="60" y="20" width="275" height="127"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-lK-mBJ">
+                        <rect key="frame" x="355" y="40" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0N6-7t-Qry"/>
+                            <constraint firstAttribute="width" constant="20" id="CIa-Yr-tKk"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="like"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="작성시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1Q-Xf-ePm">
+                        <rect key="frame" x="60" y="167" width="48.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT2-PU-eNQ">
+                        <rect key="frame" x="128.5" y="167" width="36.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 달기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-4d-mLl">
+                        <rect key="frame" x="185" y="167" width="52.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="번역 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0g-IU-nma">
+                        <rect key="frame" x="257.5" y="167" width="52.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ztn-lK-mBJ" firstAttribute="leading" secondItem="kf0-0y-WYl" secondAttribute="trailing" constant="20" id="3as-EJ-2yo"/>
+                    <constraint firstItem="f3b-4d-mLl" firstAttribute="leading" secondItem="hT2-PU-eNQ" secondAttribute="trailing" constant="20" id="8Yi-Da-ppb"/>
+                    <constraint firstItem="LZk-MB-Dzu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Aub-ST-0V5"/>
+                    <constraint firstItem="hT2-PU-eNQ" firstAttribute="centerY" secondItem="N1Q-Xf-ePm" secondAttribute="centerY" id="Ezv-Bd-1vZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ztn-lK-mBJ" secondAttribute="trailing" constant="20" id="K8g-mv-Rol"/>
+                    <constraint firstItem="f3b-4d-mLl" firstAttribute="centerY" secondItem="hT2-PU-eNQ" secondAttribute="centerY" id="MQe-lS-VYR"/>
+                    <constraint firstItem="LZk-MB-Dzu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Uhc-j8-WNP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="N1Q-Xf-ePm" secondAttribute="bottom" constant="20" id="Wct-fd-NIe"/>
+                    <constraint firstItem="j0g-IU-nma" firstAttribute="leading" secondItem="f3b-4d-mLl" secondAttribute="trailing" constant="20" id="ej9-LQ-W3H"/>
+                    <constraint firstItem="kf0-0y-WYl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="f2u-hf-eqx"/>
+                    <constraint firstItem="N1Q-Xf-ePm" firstAttribute="top" secondItem="kf0-0y-WYl" secondAttribute="bottom" constant="20" id="gxO-GR-lQf"/>
+                    <constraint firstItem="hT2-PU-eNQ" firstAttribute="leading" secondItem="N1Q-Xf-ePm" secondAttribute="trailing" constant="20" id="pry-qb-3xE"/>
+                    <constraint firstItem="kf0-0y-WYl" firstAttribute="leading" secondItem="LZk-MB-Dzu" secondAttribute="trailing" constant="10" id="rZ3-Qj-IjV"/>
+                    <constraint firstItem="j0g-IU-nma" firstAttribute="centerY" secondItem="f3b-4d-mLl" secondAttribute="centerY" id="tkE-yg-STG"/>
+                    <constraint firstItem="N1Q-Xf-ePm" firstAttribute="leading" secondItem="kf0-0y-WYl" secondAttribute="leading" id="wWr-r9-uau"/>
+                    <constraint firstItem="ztn-lK-mBJ" firstAttribute="bottom" secondItem="LZk-MB-Dzu" secondAttribute="bottom" id="x9t-c5-OBK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellLbl" destination="kf0-0y-WYl" id="xyM-4d-eW7"/>
+                <outlet property="cellimg" destination="LZk-MB-Dzu" id="B4v-Z5-o97"/>
+                <outlet property="likeLbl" destination="hT2-PU-eNQ" id="pQx-Q5-lNG"/>
+                <outlet property="timeLbl" destination="N1Q-Xf-ePm" id="V2d-Ib-S94"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="100.11160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="30" height="30"/>
+    </resources>
+</document>

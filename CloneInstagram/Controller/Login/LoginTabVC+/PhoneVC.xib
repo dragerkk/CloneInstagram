@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneVC" customModule="CloneInstagram" customModuleProvider="target">
+            <connections>
+                <outlet property="phoneBtn" destination="c66-oH-6FJ" id="bsc-pY-Xo3"/>
+                <outlet property="phoneTextField" destination="MH1-NG-XGV" id="ju1-RT-fHE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MH1-NG-XGV">
+                    <rect key="frame" x="40" y="64" width="334" height="50"/>
+                    <color key="backgroundColor" red="0.97638186059999998" green="0.97638186059999998" blue="0.97638186059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="rhD-bY-kTV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c66-oH-6FJ">
+                    <rect key="frame" x="40" y="134" width="334" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3H1-dr-LBo"/>
+                    </constraints>
+                    <color key="tintColor" red="0.46813488009999998" green="0.7842252851" blue="0.97257679699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보안 및 로그인 목적으로 Instagram에서 보내는 SMS 알림을 수신할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-2U-0RJ">
+                    <rect key="frame" x="40" y="209" width="334" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FT1-2U-0RJ" firstAttribute="top" secondItem="c66-oH-6FJ" secondAttribute="bottom" constant="25" id="NX8-r1-zlu"/>
+                <constraint firstItem="c66-oH-6FJ" firstAttribute="top" secondItem="MH1-NG-XGV" secondAttribute="bottom" constant="20" id="TUL-8J-Ow9"/>
+                <constraint firstItem="c66-oH-6FJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="UvL-Gx-mla"/>
+                <constraint firstItem="MH1-NG-XGV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ZHg-7p-anA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MH1-NG-XGV" secondAttribute="trailing" constant="40" id="c1g-Uc-t4A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c66-oH-6FJ" secondAttribute="trailing" constant="40" id="ePP-Uv-LDR"/>
+                <constraint firstItem="FT1-2U-0RJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="qah-tU-Fgh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FT1-2U-0RJ" secondAttribute="trailing" constant="40" id="uj2-IB-wYL"/>
+                <constraint firstItem="MH1-NG-XGV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="wRa-4Y-o85"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

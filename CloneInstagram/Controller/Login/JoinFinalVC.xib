@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinFinalVC" customModule="CloneInstagram" customModuleProvider="target">
+            <connections>
+                <outlet property="finishBtn" destination="8Pu-Le-U1e" id="Anp-Nv-wAQ"/>
+                <outlet property="topView" destination="4lR-ga-dfH" id="KRH-TO-FCq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-ga-dfH">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BHL-s9-s9z"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="foD-98-rk5">
+                    <rect key="frame" x="157" y="124" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="UwF-UH-Lvb"/>
+                        <constraint firstAttribute="height" constant="100" id="YdI-j9-yVq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="완료되었습니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKJ-es-ARW">
+                    <rect key="frame" x="111" y="244" width="192" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정보 수집, 이용 및 제공에 관한 내용을 검토하고 동의해주셔서 감사합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM0-ve-o65">
+                    <rect key="frame" x="103" y="310" width="208.5" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pu-Le-U1e">
+                    <rect key="frame" x="40" y="782" width="334" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="t0U-PM-Ra1"/>
+                    </constraints>
+                    <color key="tintColor" red="0.46813488009999998" green="0.7842252851" blue="0.97257679699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="닫기"/>
+                    <connections>
+                        <action selector="finishBtnAction:" destination="-1" eventType="touchUpInside" id="DMe-Zt-3vo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UKJ-es-ARW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5rC-Yw-cg4"/>
+                <constraint firstItem="dM0-ve-o65" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GPW-bx-fOh"/>
+                <constraint firstItem="4lR-ga-dfH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JiT-I9-w2e"/>
+                <constraint firstItem="8Pu-Le-U1e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="LcW-zq-F2D"/>
+                <constraint firstItem="UKJ-es-ARW" firstAttribute="top" secondItem="foD-98-rk5" secondAttribute="bottom" constant="20" id="MxB-8F-sas"/>
+                <constraint firstItem="foD-98-rk5" firstAttribute="top" secondItem="4lR-ga-dfH" secondAttribute="bottom" constant="30" id="OqG-7f-eF9"/>
+                <constraint firstItem="foD-98-rk5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OzR-CY-01T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8Pu-Le-U1e" secondAttribute="bottom" constant="30" id="VJQ-cz-3VV"/>
+                <constraint firstItem="4lR-ga-dfH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VjV-qW-1RH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Pu-Le-U1e" secondAttribute="trailing" constant="40" id="aQH-ac-eHU"/>
+                <constraint firstItem="dM0-ve-o65" firstAttribute="top" secondItem="UKJ-es-ARW" secondAttribute="bottom" constant="30" id="w9b-XQ-zQQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4lR-ga-dfH" secondAttribute="trailing" id="x60-oK-SfN"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="49.553571428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check" width="181" height="173"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
