@@ -206,6 +206,7 @@
 ## 댓글 부분 문제발생 
 - attributedText로 레이아웃 해결,
 
-- 선택한 셀의 postId값을 다른 뷰컨트롤러로 전달하기가 힘들었는데 
+- 선택한 셀의 postId값을 다른 뷰컨트롤러로 전달 -- 해결
 
-eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOjE5MSwiaWF0IjoxNjY4MDk0NTE1LCJleHAiOjE2Njk1NjU3NDR9.f5EzFesLiLUzl8Gx4uZSTRMb0aR2_RuJe3J9NHqcon4 
+
+
